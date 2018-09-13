@@ -1,0 +1,14 @@
+<h1>Task Dog</h1>
+<%= link_to "New Task", new_task_path, id: "new_link", remote: true%>
+<h2>Incomplete Tasks</h2>
+<table id="tasks_incomplete">
+  <tbody>
+    <%= render partial: 'task', collection: @incomplete_tasks%>
+  </tobdy>
+</table>
+<h2>Comlpete Tasks</h2>
+<table id="tasks_complete">
+</tbody>
+<%= render partial: 'task', collection: @complete_tasks%>
+</tbody>
+</table>

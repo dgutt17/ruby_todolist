@@ -1,0 +1,6 @@
+<tr class='edit delete'>
+    <td><%= task.name %></td>
+    <td><%= link_to "Show", task %></td>
+    <td><%= link_to "Edit", task, method: :put, remote: true%></td>
+    <td><%= link_to "Delete", task, method: :delete, data: {confirm: 'Are you sure', remote: true}%></td>
+</tr>
